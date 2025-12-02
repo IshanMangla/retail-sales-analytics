@@ -53,7 +53,7 @@ def main():
     df_clean = clean_and_enrich(df_raw)
 
     # Create processed data folder
-    PROCESSED_PATH = DATA_PATH.parents[1] / "data" / "processed"
+    PROCESSED_PATH = DATA_PATH.parents[1] / "processed"
     PROCESSED_PATH.mkdir(parents=True, exist_ok=True)
 
     # Save cleaned file
