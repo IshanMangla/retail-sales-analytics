@@ -1,0 +1,18 @@
+# Markdown
+
+This notebook performs exploratory data analysis (EDA) on a retail sales dataset for a multi-city Indian retail chain.
+Objectives:
+- Understand overall sales performance and key KPIs.
+- Identify top-performing stores and product categories.
+- Analyze monthly and weekday/weekend sales patterns.
+- Create charts that can be reused in dashboards.
+
+
+
+## Key Insights
+
+- Identify which store has the highest total revenue and which is underperforming.
+- Compare which product category (Electronics, Clothing, Groceries, Home Decor) is driving most of the sales.
+- Highlight seasonality or monthly peaks in revenue.
+- Note whether weekends outperform weekdays.
+- Suggest focus areas, such as promoting strong categories in weaker stores.
