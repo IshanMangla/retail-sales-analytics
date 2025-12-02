@@ -11,7 +11,7 @@ Author: Ishan Mangla
 import pandas as pd
 from pathlib import Path
 
-DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "retail_sales_2023_india.csv"
+DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "retail_sales_2023_india.csv"
 
 def load_raw_data(path: Path = DATA_PATH) -> pd.DataFrame:
     """Load raw retail sales data from CSV."""
@@ -47,7 +47,7 @@ def main():
     df_raw = load_raw_data()
     df_clean = clean_and_enrich(df_raw)
 
-    output_path = DATA_PATH.parent / "retail_sales_2023_india_clean.csv"
+    output_path = DATA_PATH.parent / "data" / "processed" / "retail_sales_2023_india_clean.csv"
     df_clean.to_csv(output_path, index=False)
     print(f"Saved cleaned data to {output_path}")
 
